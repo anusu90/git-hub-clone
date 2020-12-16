@@ -17,11 +17,8 @@ const { Octokit } = require("@octokit/core");
 
 // searchGithub ();
 
-// 8a2d0df6b4a58d9d0bafbd1cd3e78938d3f1f189
 
 const myGitKey = process.env.myGitKey
-
-
 async function MyFunc (){
 
     try {
