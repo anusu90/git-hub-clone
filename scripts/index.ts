@@ -1,5 +1,6 @@
 const { Octokit } = require("@octokit/core");
-require('dotenv').config()
+
+// require('dotenv').config()
 
 
 // rajavasanthan@guvi.in
@@ -18,17 +19,20 @@ require('dotenv').config()
 
 // 8a2d0df6b4a58d9d0bafbd1cd3e78938d3f1f189
 
+const myGitKey = process.env.myGitKey
+
+
 async function MyFunc (){
 
     try {
-        const octokit = new Octokit({ auth: `1f132192db69d44a6e0b484d87618838bc022ffc` });
+        const octokit = new Octokit({ auth: myGitKey });
         const response = await octokit.request('GET /users/{user}',{
             user: 'anusu900uy',
         });
         
     } catch (error) {
         
-        const octokit = new Octokit({ auth: `1f132192db69d44a6e0b484d87618838bc022ffc` });
+        const octokit = new Octokit({ auth: myGitKey });
         const res2 = await octokit.request('GET /search/code', {
             q: 'guvi',
         });
