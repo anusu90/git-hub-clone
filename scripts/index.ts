@@ -1,4 +1,6 @@
 const { Octokit } = require("@octokit/core");
+require('dotenv').config()
+
 
 // rajavasanthan@guvi.in
 
@@ -14,7 +16,7 @@ const { Octokit } = require("@octokit/core");
 
 // searchGithub ();
 
-// 1f132192db69d44a6e0b484d87618838bc022ffc
+// 8a2d0df6b4a58d9d0bafbd1cd3e78938d3f1f189
 
 async function MyFunc (){
 
